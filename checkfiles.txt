@@ -58,6 +58,17 @@ vendor/lib64/libwvhidl.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
 
+vendor/lib/libkeymasterutils.so
+vendor/lib/libkeymasterprovision.so
+vendor/lib/libqtikeymaster4.so
+vendor/lib/libkeymasterdeviceutils.so
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+
+
+
 
 
 
