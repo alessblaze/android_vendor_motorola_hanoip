@@ -8,6 +8,34 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "vulkan.adreno",
+    owner: "motorola",
+    strip: { none: true },
+    target: {
+        android_arm64: { srcs: ["proprietary/vendor/lib64/hw/vulkan.adreno.so"] },
+        android_arm:   { srcs: ["proprietary/vendor/lib/hw/vulkan.adreno.so"] },
+    },
+    shared_libs: [
+        "android.hardware.graphics.mapper@4.0",
+        "libc++",
+        "libcutils",
+        "libgralloctypes",
+        "libhardware",
+        "libhidlbase",
+        "liblog",
+        "libnativewindow",
+        "libsync",
+        "libutils",
+        "libz",
+    ],
+    compile_multilib: "both",
+    prefer: true,
+    vendor: true,
+    relative_install_path: "hw",  
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libfastcvopt",
 	owner: "motorola",
 	strip: {
