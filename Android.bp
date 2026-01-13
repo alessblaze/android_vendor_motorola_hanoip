@@ -36,6 +36,349 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libasphere",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libasphere.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libasphere.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+cc_prebuilt_library_shared {
+    name: "libdynproc",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libdynproc.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libdynproc.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+cc_prebuilt_library_shared {
+    name: "libldnhncr",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libldnhncr.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libldnhncr.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+// --------------------------------------------------
+// Audio utilities based effects
+// --------------------------------------------------
+
+cc_prebuilt_library_shared {
+    name: "libbundlewrapper",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libbundlewrapper.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libbundlewrapper.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "libaudioutils",
+        "libcutils",
+        "liblog",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+cc_prebuilt_library_shared {
+    name: "libdownmix",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libdownmix.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libdownmix.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "libaudioutils",
+        "libcutils",
+        "liblog",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+cc_prebuilt_library_shared {
+    name: "libreverbwrapper",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libreverbwrapper.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libreverbwrapper.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "libaudioutils",
+        "libcutils",
+        "liblog",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+// --------------------------------------------------
+// Qualcomm effects
+// --------------------------------------------------
+
+cc_prebuilt_library_shared {
+    name: "libqcbassboost",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libqcbassboost.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libqcbassboost.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcreverb",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libqcreverb.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libqcreverb.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcvirt",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libqcvirt.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libqcvirt.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+// --------------------------------------------------
+// Visualizers & voice processing
+// --------------------------------------------------
+
+cc_prebuilt_library_shared {
+    name: "libvisualizer",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libvisualizer.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libvisualizer.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+// --------------------------------------------------
+// Audio pre-processing (recording path)
+// --------------------------------------------------
+
+cc_prebuilt_library_shared {
+    name: "libaudiopreprocessing",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libaudiopreprocessing.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so"],
+        },
+    },
+
+    strip: { none: true },
+    check_elf_files: false,
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+// --------------------------------------------------
+// Effect proxy (ties multiple effects together)
+// --------------------------------------------------
+
+cc_prebuilt_library_shared {
+    name: "libeffectproxy",
+    vendor: true,
+    prefer: true,
+    soc_specific: true,
+
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/soundfx/libeffectproxy.so"],
+        },
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/soundfx/libeffectproxy.so"],
+        },
+    },
+
+    strip: { none: true },
+
+    shared_libs: [
+        "liblog",
+        "libcutils",
+        "libutils",
+        "libeffects",
+        "libc++",
+    ],
+
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
+}
+
+cc_prebuilt_library_shared {
 	name: "libfastcvopt",
 	owner: "motorola",
 	strip: {
