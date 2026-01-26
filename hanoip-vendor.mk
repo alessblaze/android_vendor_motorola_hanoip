@@ -1490,4 +1490,5 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.hardware.servicetracker@1.2-service \
     libqcodec2 \
-    vendor.qti.media.c2@1.0-service 
+    vendor.qti.media.c2@1.0-service \
+    libshoebox
